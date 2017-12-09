@@ -10,7 +10,10 @@ def create_app():
     app.config.from_object(app_settings)
 
     # register blueprints
-    from project.api.text import text_blueprint
+    from src.api.text import text_blueprint
     app.register_blueprint(text_blueprint)
+    from src.api.index import index_blueprint
+    app.register_blueprint(index_blueprint)
+
 
     return app

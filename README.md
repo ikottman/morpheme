@@ -1,11 +1,6 @@
 # Build and run image
 ```
-docker-compose up -d --force-recreate
+docker-compose up --build --force-recreate
 ```
 
-# Follow logs
-```
-docker-compose logs -f
-```
-
-# http://localhost:5001/text
+# http://localhost:5000/text
